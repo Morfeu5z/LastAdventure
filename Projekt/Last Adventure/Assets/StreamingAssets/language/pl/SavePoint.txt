@@ -1,0 +1,16 @@
+﻿Person|HeroPortret:Stefan||
+GOTO|EventWasActiveted:SaveRock|step2|
+|||>> Zbadaj <<
+Keyboard|off||
+|||Hm...  ಠ_ಠ    
+|||Lewitujący kawał kamienia. Wygląda zaiście niewiarygodnie.
+|||Czuję przy nim taki... spokój...
+ActiveEvent|SaveRock||
+Keyboard|on||
+Jump||step2|
+|||>> Podaruj wspomnienie by zapisać stan gry <<
+Keyboard|off||
+|||Hm... Czuję się jakoś tak... Bezpieczniej ಠ_ಠ  
+SavePoint|||
+Keyboard|on||
+Stop|||

@@ -1,0 +1,51 @@
+﻿Person|HeroPortret:Stefan||
+GOTO|EventWasActiveted:Golem-DoorOpen|reloadScene2|
+GOTO|EventWasActiveted:DeadBossGoodBoss|OpenDoor3|
+Movement|1||
+GOTO|EventWasActiveted:OldMan-SecretOfDoor|OpenDoor|
+GOTO|EventWasActiveted:Golem-TheDoor|DoorClose|
+|||>> Spróbuj otworzyć <<
+Keyboard|off||
+|||Wooo! Ale wielkie wrota!
+|||Mają rozmach skurczybąki.
+|||Ciekawe czy dam radę otworzyć.
+|||Ehhh... Ani drgną...
+|||Czyżby zamknięte zostały jakimś mechanizmem, albo...
+|||... Magią? o-O?
+|||Lepiej się rozejrzę, może znajdę jakieś coś.
+Keyboard|on||
+ActiveEvent|Golem-TheDoor||
+Stop|||
+Jump||DoorClose|
+|||Wciąż ani drgną...
+Stop|||
+//---------------------- Otwórz po walce
+Jump||OpenDoor3|
+|||>> Spróbuj otworzyć <<
+Keyboard|off||
+|||Nareszcie! Teraz mogę przejść!
+|||No co jest? Wciąż ani drgną!? Cholerne wrota!
+|||***Łub***...***Jebs***...***Stuk***!       
+|||Heh, życie... Otworzyło się ʕっ•ᴥ•ʔ   
+|||Wystarczyło mocniej walnąć.       
+ActiveEvent|Golem-DoorOpen||
+Keyboard|on||
+BackToBegin|||
+//---------------------- Secret end
+Jump||OpenDoor|
+GOTO|EventWasActiveted:ThisIsBoss|WaitWithOpen|
+|||>> Pierdutnij <<
+Keyboard|off||
+|||***Łub***...***Jebs***...***Stuk***!        
+|||Heh, życie... Otworzyło się ʕっ•ᴥ•ʔ          
+ActiveEvent|Golem-DoorOpen||
+Keyboard|on||
+//---------------------- Go to fin scene
+Jump||reloadScene|
+Jump||reloadScene2|
+GoToFin|||
+//---------------------- Trwa walka nie czas na drzwi szarpanak
+Jump||WaitWithOpen|
+Movement|1||
+|||Nie czas teraz na walenie we wrota (ノಠ  Oಠ)ノ   
+Stop|||

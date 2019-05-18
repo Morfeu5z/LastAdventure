@@ -1,0 +1,15 @@
+﻿Person|HeroPortret:Stefan||
+Movement|-1||
+|||>> Sprawdź <<
+GOTO|ItemInEquip:BlueCard|Open|
+GOTO|EventWasActiveted:Sally-PowerGenerator|GeneratorOn|
+|||Wygląda na to, iż brakuje zasilania. Nie wejdę tam :/
+Stop|||
+Jump||GeneratorOn|
+|||Wymagana karta dostępu poziomu niebieskiego.
+ActiveEvent|Lab-Door||
+Stop|||
+Jump||Open|
+Movement|0||
+|||Dostęp przyznany.
+Stop|||

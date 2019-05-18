@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Resources/Scenes/MainMenu.unity
+    guid: 880475fce04ff644ca85fae3170c4d3b
+  - enabled: 1
+    path: Assets/Resources/Scenes/Scene00-Cave.unity
+    guid: f59856eeffb9d7240aefcc9157d30d44
+  - enabled: 1
+    path: Assets/Resources/Scenes/Scene01-Road.unity
+    guid: 11feb89814b5662439fd4414a24d3a9f
+  - enabled: 1
+    path: Assets/Resources/Scenes/Scene02-Lab.unity
+    guid: 00da333860bf46b4183fb75c6a517f7f
+  - enabled: 1
+    path: Assets/Resources/Scenes/Scene03-SkyTown.unity
+    guid: f7c1ceaeaadba654cb61968d1a616b85
+  - enabled: 1
+    path: Assets/Resources/Scenes/Fin.unity
+    guid: 1d4c8b65a6e136342a950a40423f269f
+  m_configObjects: {}

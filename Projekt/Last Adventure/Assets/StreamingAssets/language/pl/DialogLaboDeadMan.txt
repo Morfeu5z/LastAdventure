@@ -1,0 +1,42 @@
+﻿Person|HeroPortret:Stefan||
+GOTO|EventWasActiveted:Labo-DeadMan|Step2|
+|||>> Zbadaj <<
+Keyboard|off||
+|||A niech mnie dunder świśnie! Martwy trup!
+|||Wygląda jak ten gość w wąwozie.
+|||Może to jego brat.
+|||...
+|||Hmm...
+|||Trzyma jakąś kartkę. List pożegnalny?
+ActiveEvent|Labo-DeadMan||
+Keyboard|on||
+Jump||Step2|
+|||>> Czytaj list <<
+Keyboard|off||
+|||"Drogi czytelniku..."
+|||"Drogi czytelniku... Skoro to czytasz ja pewnie jestem martwy."
+|||"Jak do tego doszło?"
+|||"Jak do tego doszło? Winę ponoszę ja sam..."
+|||"Jak do tego doszło? Winę ponoszę ja sam... a wszystko przez moją nieuwagę."
+|||"Najgorsze jest to, że był ze mną mój brat."
+|||"Podczas badań ten cholerny glut nas zaatakował i rozdzieliliśmy się."
+|||"Uciekłem aż tutaj jednk do mojego organizmu przedowstała się toksyna."
+|||"Czuję jak zaczyna paraliżować moje ciało."
+|||"Udało mi się umieścić pojemnik w cielsku tego śluza."
+|||"Powinien z czasem wchłonąć najsilniejszą skumulowaną toksynę."
+|||"Miało mi to posłużyć do badań.. jak sam widzisz mi się już nie przyda."
+|||"Eh... może zrobisz z niej jakiś pożytek o ile ją odzyskasz."
+|||"Podobnie zbędne są mi buty rakietowe, które chciałbym ci podarować."
+|||"Powinny Ci pomóc opuścić to przeklęte miejsce."
+|||"Jak się pewnie domyślasz po nazwie pozwalają wyżej skakać za pomocą siły odrzutu."
+|||"Konkretniej mówiąc, po podskoku aktywują się czujniki pozwalające na eksplozję ładunków."
+|||"Technologia ta umożliwia dodatkowy skok wykonany w powietrzu."
+|||"Po wylądowaniu na ziemi lub źródle esencji ładunek się zregeneruje."
+|||"Z tego co wiem, jedyna droga prowadząca do wyjścia znajduje się na końcu pomieszczenia."
+|||"Tam też skierował się mój brat."
+|||"Jeśli go spotkasz..."
+|||"Jeśli go spotkasz... Proszę przeproś go ode mnie."
+|||"Powodzenia..."
+|||"Powodzenia... obyś miał więcej szczęścia niż ja."
+Keyboard|on||
+Stop|||

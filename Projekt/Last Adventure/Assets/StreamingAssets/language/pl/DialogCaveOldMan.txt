@@ -1,0 +1,237 @@
+﻿GOTO|EventWasActiveted:OldMan-YourNameIsStefan|Stefan|
+Person|HeroPortret:Ja||
+Jump|3||
+Jump||Stefan|
+Person|HeroPortret:Stefan||
+|||>> Rozmawiaj <<
+Person|OldManPortret:Staruszek||
+GOTO|EventWasActiveted:DeadBossGoodBoss|GolemIsDead|
+GOTO|ItemInEquip:specialAmmo|specialAmmo|
+GOTO|EventWasActiveted:OldMan-SkipSecApple|SkipSecApple|
+GOTO|EventWasActiveted:Save-FirstSave|SecApple|
+Jump||SkipSecApple|
+GOTO|EventWasActiveted:OldMan-GolemDialog|DontTalkAboutGolem|
+GOTO|EventWasActiveted:Golem-NeedToTalkWithOldMan|talkAboutGolem|
+GOTO|EventWasActiveted:OldMan-SecretOfDoor|DonttalkAboutSecretOfDoor|
+GOTO|EventWasActiveted:Golem-TheDoor|talkAboutSecretOfDoor|
+Jump||DonttalkAboutSecretOfDoor|
+GOTO|EventWasActiveted:Sally-FirstDialog|HelpingSally|
+GOTO|EventWasActiveted:OldMan-FirstDialog|AfterFirstDialogWithOldMan|
+GOTO|EventWasActiveted:OldMan-UsedFirstMedic|UsedFirstMedic|
+GOTO|EventWasActiveted:OldMan-FirstFood|FirstFood|
+GOTO|EventWasActiveted:OldMan-FirstGunEquiped|FirstGunEquiped|
+GOTO|EventWasActiveted:OldMan-FirstGun|FirstGun|
+//-------------------------------------------------Dialog Początkowy
+Keyboard|off||
+|||O! Jednak odzyskałeś przytomność.
+|||To dobrze, pewnie jesteś nie swój jeszcze, ale... 
+|||...skup się i <color=#000000>uważnie słuchaj co się do Ciebie mówi</color>.
+|||Inaczej możesz się pogubić.
+|||Już myślałem, że grób przyjdzie mi kopać. Leżaleś tak trzy dni bez ducha.
+|||Nieźle Cię to coś co tam zaczepiałeś poharatało, bo ledwo Cię odratowałem jak tu trafiłeś.
+|||Podobno spadłeś z nieba ptaszyno. Latać się uczyłeś, czy jak.
+|||Ocho... Czyżbyś nic nie pamiętał? W sumie nie dziwi mnie to.
+|||Gdyby nie Sally to kto wie co mogło by się z Tobą stać.
+|||A ty w ogóle masz jakieś imie?
+Person|HeroPortret:Stefan||
+|||  ...  
+Person|OldManPortret:Staruszek||
+|||No śmiało, powiedz coś.
+Person|HeroPortret:Stefan||
+|||  ... ...  
+Person|OldManPortret:Staruszek||
+|||Dobra, nie chcesz nie mów, ale ja Cię będę nazywał Stefan. To jakiś problem?
+Person|HeroPortret:Stefan||
+|||  ... ... ...
+Person|OldManPortret:Staruszek||
+ActiveEvent|OldMan-YourNameIsStefan||
+|||Ano coś tak czułem.
+|||Nie wiem skąd jesteś, ani co tu robisz Stefku, ale najwyraźniej los chciał naszego spotkania.
+|||Ocaliłem Ci skórę, więc bądź tak dobry i zrób coś dla mnie.
+|||Kierując się na wschód przez mroczny las trafisz do wielkiej bramy.
+|||Prowadzi ona do przejścia przez góry, tak dostaniesz się do miasta.
+|||Zanieś tę paczkę do karczmy <color=#000000>"Pod Misiem Kudłaczem"</color>...
+|||... odbierze ją barman imieniem <color=#000000>Franky</color>.
+|||Chcesz widzieć co jest w środku?
+Person|HeroPortret:Stefan||
+||| ...  
+Person|OldManPortret:Staruszek||
+|||No i tak trzymać. Pod żadnym pozorem nie zaglądaj do środka.
+|||>> <color=#000000>Otrzymano tajemniczą paczkę</color> <<
+Add|MysteryBox:Fabular||
+|||Z resztą nałożyłem pieczęć.
+|||A właśnie propo magii. Próbowalem zdjąć twój plecak, ale chyba zszedłby jedynie ze skórą.
+|||Nie zrozum mnie źle, ale również przejrzałem twoje rzeczy. 
+|||Właściwie to chciałem, ale znikały mi z rąk i wracały na swoje miejsce. Pewnie tego nie pamiętasz ale...
+|||... najwyraźniej w jakiś sposób musiałeś zapieczętować swój bagaż. Nikt poza tobą nie ruszy twoich rzeczy.
+|||Jak już dotrzesz do miasta to popytaj ludzi może ktoś Cię tam pozna. Droga nie będzie należała do najprostrzych.
+|||Możesz natknąć się na stworzenia chcące zrobić sobie z Ciebie obiad, a z uwagi, że robisz mi za kuriera...
+|||... zacytuję pewnego starca.
+|||IT'S DANGEROUS TO GO ALONE! TAKE THIS.
+|||Czy jakoś tak to szło... Masz moją starą Betsy.
+Add|Gun:Weapon||
+|||>> <color=#000000>Otrzymano strzeblbę</color> <<
+|||Mi się już nie przyda, bo mam nową.
+Person|HeroPortret:Stefan||
+|||  ...  
+Person|OldManPortret:Staruszek||
+Keyboard|on||
+ActiveEvent|OldMan-FirstGun||
+Jump||FirstGun|
+GOTO|ItemInActive:Gun|FirstGunEquiped|Kliknij <color=#000000>{ TAB }</color> by wejść do ekwipunku i wyposaż się w nią wciskając <color=#000000>{ ENTER }</color>.
+Back|2||
+Jump||FirstGunEquiped|
+ActiveEvent|OldMan-FirstGunEquiped||
+Keyboard|off||
+|||Dbaj o nią jak o własną...
+|||... a strzelasz <color=#000000>{ Klawiszem</color> J <color=#000000>}</color>.
+|||Staraj się nie zaczepiać <color=#000000>"Slime'ów"</color>. Przeważnie są spokojne.
+|||Masz tu jeszcze coś na ząb.
+Add|Apple:Food||
+ActiveEvent|OldMan-FirstFood||
+|||>> <color=#000000>Otrzymano jabłko</color> <<
+Keyboard|on||
+Jump||FirstFood|
+GOTO|LeftLife:2|FirstMedic|Zjedz i odzyskaj siły.
+Back|||
+Jump||FirstMedic|
+ActiveEvent|OldMan-UsedFirstMedic||
+Jump||UsedFirstMedic|
+Keyboard|off||
+|||No i fajno. <color=#000000>Klapnij na stołku obok ogniska</color> jeśli chcesz w pełni wypocząć.
+ActiveEvent|OldMan-FirstDialog||
+Jump||AfterFirstDialogWithOldMan|
+|||Teraz leć podziękować swemu wybawcy. Ma obóz przy starym Jumperze wystarczy byś cały czas szedł w prawo...
+|||... a jakbyś był kiedyś jeszcze w okolicy to zajdź na kawę i ciastko.
+|||Na koniec dodam, że <color=#000000>warto czytać opisy przedmiotów</color>.
+|||I nie ma sensu zaczepiać <color=#000000>Slimów</color>, jeśli same nie zaczepiają.
+|||... a strzelasz <color=#000000>{ Klawiszem</color> J <color=#000000>}</color>.
+Keyboard|on||
+Stop|||
+//-------------------------------------------------Drugie jablko
+Jump||SecApple|
+Keyboard|off||
+|||Hej Stefan!.
+|||Masz tu jeszcze jedno jabłko. Może się przydać.
+Add|Apple:Food||
+|||>> <color=#000000>Otrzymano jabłko</color> <<
+Person|HeroPortret:Stefan||
+|||  ...  
+Person|OldManPortret:Staruszek||
+|||  ...  
+Person|HeroPortret:Stefan||
+|||  ... ...  
+Person|OldManPortret:Staruszek||
+|||  ... ...  
+Person|HeroPortret:Stefan||
+|||  ... ... ...  
+Person|OldManPortret:Staruszek||
+|||Nie rób tak, to niezręczne, boje sie...
+Person|HeroPortret:Stefan||
+|||  ... ... ... ...  
+Person|OldManPortret:Staruszek||
+ActiveEvent|OldMan-SkipSecApple||
+Keyboard|on||
+|||Won...
+GOTO|EventWasActiveted:Golem-NeedToTalkWithOldMan|talkAboutGolem|
+BackToBegin|||
+//-------------------------------------------------Pomoc Sally
+Jump||HelpingSally|
+Keyboard|off||
+Person|OldManPortret:Staruszek||
+|||Moja wnuczka zaciągnęła Cię do pomocy czyż nie? I nie odmówiłeś. Jednak dobry z Ciebie gość Stefku.
+Person|HeroPortret:Stefan||
+||| ( ͡~ ͜ʖ ͡°)  
+Keyboard|on||
+Stop|||
+//-------------------------------------------------Golem Żyje
+Jump||talkAboutGolem|
+Person|HeroPortret:Stefan||
+|||>> Opowiedz o Golemie <<
+Keyboard|off||
+Person|OldManPortret:Staruszek||
+|||Co tam Stefku?
+|||Mam nadzieję, że wnuczka nie daje Ci w kość.
+|||A co to tam mi pokazujesz.
+Person|HeroPortret:Stefan||
+|||Ja...
+|||Zrobić...
+|||Błąd...
+|||Strażnik...
+|||Żyć...
+Person|OldManPortret:Staruszek||
+|||Strażnik...
+|||Żyć...
+|||Hmmmmmmmm...
+|||Strażnik
+|||Strażnik.
+|||Strażnik..
+|||Strażnik...
+|||Żyć.
+Person|NarratorPortret:Narrator||
+|||Narrator: "Ze względu na siłę słowa, może ono zostać uznane za wulgarne dlatego też niniejszą wiązankę zastąpiono materiałem poświęconym languście."
+Person|NarratorPortret:Narrator||
+|||Narrator: "Wbrew obiegowej opini langusta żywi się wyłącznie owocami morza. Choć gdyby mogła jadłaby dżem."
+Person|NarratorPortret:Narrator||
+|||Narrator: "Gdyba autor miał więcej czasu nastąpiłoby zbliżenie na scenę, w ktorej staruszek łapie oddech po żywiołowych krzykach."
+Person|OldManPortret:Staruszek||
+|||A więc obudziłeś pradawnego golema...
+|||Coś czułem, że tak to się skonczy. 
+|||A wystarczyło pchnąć mocniej wrota by się otworzyły, pewnie znów się zacięły po prostu!
+|||Ehhhh... Dlaczego nie spróbowałeś pchnąć!?
+|||Eh...
+|||No dobra... to mamy problem.  
+|||Posłuchaj mnie, naprawisz co zepsułeś, a ja Ci w tym pomogę.
+|||Golem jest silny i na razie nie do ruszenia. Chroni go pradawna magia.
+|||Jest jednak sposób na zdjęcie czaru. Widzisz ten stół alchemiczny obok nas? Zrobimy z niego użytek.
+|||Potrzebne nam będzie parę składników: <color=#000000>Katalizator</color>, <color=#000000>Esencja</color> i <color=#000000>Toksyna</color>.
+|||<color=#000000>Sally</color> z tego co pamiętam posiada jakiś <color=#000000>Katalizator</color>. Powinien wystarczyć.
+|||Ogromnym skupiskiem esencji podobno jest <color=#000000>kwiat</color> rosnący w <color=#000000>SkyTown</color>. Wystarczy jeden płatek.
+|||Miasto jest od dawna opuszczone to i nie wiem co tam znajdziesz. Dostaniesz się tam jak tylko Sally naprawi Jumper'a.
+|||Pojęcia nie mam co innego może posiadać równie wiele esencji, a jest to składnik niezbędny by zaszła reakcja osobliwej materii.
+|||Co do <color=#000000>toksyny</color>. Niedaleko są <color=#000000>katakumby</color>, dawniej laboratorium. Jestem pewien, że coś tam znajdziesz.
+|||Jak wszystko zbierzesz to do mnie wróć. Spróbujemy wytworzyć amunicję z kopem dla staruszki Betsy.
+|||Leć, szkoda czasu.
+ActiveEvent|Need-Catalyst||
+ActiveEvent|OldMan-GolemDialog||
+Keyboard|on||
+//-------------------------------------------------Potrzebne Składiki
+Jump||DontTalkAboutGolem|
+Person|OldManPortret:Staruszek||
+|||O katalizator zapytaj Sally.
+|||Esencję znajdziesz w SkyTown.
+|||Toksyna pewnie będzie gdzieś w obecnych katakumbach.
+|||Jak już wszystko zbierzesz wrzuć do gara.
+Stop|3||
+//-------------------------------------------------Walcz jak mistrz
+Jump||specialAmmo|
+Keyboard|off||
+Person|OldManPortret:Staruszek||
+|||Udalo Ci się młody!
+|||A teraz skop mu dupsko (/ ͠° ਊ ͠° )/   
+Keyboard|on||
+Stop|||
+//-------------------------------------------------Leć z paczką
+Jump||GolemIsDead|
+Keyboard|off||
+Person|OldManPortret:Staruszek||
+|||Zuch chłopak. To teraz zasuwaj z moją paczką do Kudłacza.
+Keyboard|on||
+Stop|||
+//-------------------------------------------------- Sekret Drzwi
+Jump||talkAboutSecretOfDoor|
+Keyboard|off||
+Person|OldManPortret:Staruszek||
+|||I co tam Stefku? Jeszcze się włóczysz po okolicy?
+|||A paczkę kto dostarczy?
+Person|HeroPortret:Stefan||
+|||... ( - _ -")
+Person|OldManPortret:Staruszek||
+|||Masz problem z drzwiami prawda? Nastaw ucho. Opowiem Ci coś.
+|||Te drzwi są bardzo stare. Starsze ode mnie. Pilnują wejścia gór od wieków prawdopodobnie.
+|||Kiedyś spoczywała na nich pradawna magia jednak od dawna jest uśpiona, więc...
+|||... użyj głąbie trochę siły pierdutnij w nie (╯°□°）╯
+|||Pewnie znów zardzewiały na zawiasach.
+|||Leć, szkoda czasu.
+ActiveEvent|OldMan-SecretOfDoor||
+Keyboard|on||

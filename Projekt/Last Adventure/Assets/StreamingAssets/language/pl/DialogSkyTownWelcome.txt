@@ -1,0 +1,28 @@
+﻿Person|HeroPortret:Stefan||
+GOTO|EventWasActiveted:WelcomToSkyTownInfo|Step3|
+GOTO|EventWasActiveted:WelcomToSkyTown|Step2|
+Keyboard|off||
+|||Woooo!
+|||Woooo! Ale wielki kamior!
+ActiveEvent|WelcomToSkyTown||
+Keyboard|on||
+Jump||Step2|
+|||>> Czytaj <<
+Keyboard|off||
+|||W imieniu twórcy...
+|||W imieniu twórcy... pragnę Cię powitać w SkyTown...
+|||Podniebnej fortecy stworzynej z myślą o ukochanej autora.
+|||Życzę miłego pobytu i pamiętaj, że <color=#000000>wytraczy zeskoczyć</color> by zejść w dół.
+|||Hm...
+|||Musiał ją nieźle kochać skoro wybudował całe podniebne miasto.
+ActiveEvent|WelcomToSkyTownInfo||
+Keyboard|on||
+Stop|||
+Jump||Step3|
+|||>> Czytaj <<
+Keyboard|off||
+|||W imieniu twórcy pragnę Cię powitać w SkyTown...
+|||Podniebnej fortecy stworzynej z myślą o ukochanej autora.
+|||Życzę miłego pobytu i pamiętaj, że <color=#000000>wytraczy zeskoczyć</color> by zejść w dół.
+Keyboard|on||
+Stop|||

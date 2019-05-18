@@ -1,0 +1,40 @@
+﻿GOTO|EventWasActiveted:OldMan-YourNameIsStefan|Stefan|
+Person|HeroPortret:Ja||
+Jump|3||
+Jump||Stefan|
+Person|HeroPortret:Stefan||
+GOTO|EventWasNotActiveted:HeroMind-NewGame|HeroMind-NewGame|
+GOTO|EventWasActiveted:HeroMind-AfterDialogWithOldMan|Destroy|
+GOTO|EventWasActiveted:OldMan-FirstDialog|AfterDialogWithOldMan|
+GOTO|EventWasActiveted:HeroMind-NewGame|NewGameActiveted|
+Jump||HeroMind-NewGame|
+//-------------------------------------------- New Game
+Keyboard|off||
+|||>> Wciśnij <color=#000000>{ ENTER }</color> by odzyskać świadomość.<<
+AutoSave|||
+|||... Huh? ...
+|||... Huh? ... Gdzie ja? Co sie? ...
+|||Jak się tu znalazłem?
+|||Byłem nieprzytomny?
+|||Dlaczego zadek mnie boli!?
+|||Tyle pytań a tak mało odpowiedzi!!!
+|||Dobra... Spokojnie... Najpierw wywiad i obadanie terenu.
+ActiveEvent|HeroMind-NewGame||
+Keyboard|on||
+|||Poruszaj się <color=#000000>{ WSAD }</color>'em lub <color=#000000>{ STRZAŁKAMI }</color>.
+Stop||NewGameActiveted|
+Jump||AfterDialogWithOldMan|
+Keyboard|off||
+|||Upadek tłumaczy ból tyłka. Ale skąd u licha zleciałem?
+|||Za nic nie mogę sobie przypomnieć własnego imienia.
+|||I dlaczego nie potrafię wprost porozmawiać z tym dziadkiem?
+|||Jakbym rozumiał co mówi ale sam nie potrafił mówić w jego języku.
+|||Co się ze mną dzieje!? Dlaczego moje myśli wypisane są tekstem poniżej!?
+|||Dobra... już... spokój... Nie czas na panikę. Muszę zacząć działać... jakoś...
+|||Na start dobrze by było odnaleźć tego całego Sally'ego.
+|||(ง ͠° ͟ل͜ ͡°)ง Let's do this.
+ActiveEvent|OldMan-FirstSavePoint||
+ActiveEvent|HeroMind-AfterDialogWithOldMan||
+Keyboard|on||
+Jump||Destroy|
+Destroy|||

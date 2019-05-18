@@ -1,0 +1,25 @@
+﻿Person|HeroPortret:Stefan||
+GOTO|EventWasActiveted:Labo-DeadMan|Step2|
+|||>> Zbadaj <<
+Keyboard|off||
+|||Niedługo zacznę sie potykać o tych umarlaków (¬ - ¬)"  
+|||O prosze kolejny list pisany w ostatnich chwilach życia. 
+|||Jakby nie mieli nic lepszego do roboty w ostatnich chwilach życia. 
+ActiveEvent|Labo-DeadMan||
+Keyboard|on||
+Jump||Step2|
+|||>> Czytaj list <<
+Keyboard|off||
+|||"Moja najdroższa N____"   
+|||Hm... wygląda na to, że imie się zatarło.
+|||"Niech to miasto bedzie dowodem mej milości do Ciebie."  
+|||"Stworzenie go wymagało wiele wysiłku i poświęceń jednak wiem, że było warto." 
+|||"Brak mi słów by wyrazić wdzięczność za Twą obecność przy mnie w chwilach dobrych i złych."
+|||"Dlatego wolę Ci się odpłacać czynami."
+|||"Strażnik tego miejsca został zrodzony dzięki magii dusz, ze wskazaniem Twej..."
+|||"...dlatego też będzie Ci wierny po wsze czasy."
+|||"Nie dostał jeszcze imienia, więc rytuał nie dobiegł końca. Wybierz jakie Ci odpowiada najbardziej."
+|||"Na zawsze twój A____"  
+|||No co jest z tymi imionami!? Wszystko czytelne, a te jak na złość nie  L(° O °L)  
+Keyboard|on||
+Stop|||

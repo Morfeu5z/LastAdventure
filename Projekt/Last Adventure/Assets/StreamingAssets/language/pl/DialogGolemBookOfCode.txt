@@ -1,0 +1,18 @@
+﻿Person|HeroPortret:Stefan||
+GOTO|EventWasActiveted:Golem-NeedToTalkWithOldMan|step2|
+GOTO|EventWasActiveted:ThisIsBoss|step1|
+GOTO|EventWasActiveted:Golem-Awaking|CheckTheDoor|
+Stop|||
+Jump||CheckTheDoor|
+Movement|-1||
+|||Najpierw muszę sprawdzić co dały te czary.
+Stop|||
+Jump||step1|
+Keyboard|off||
+|||To narozrabiałem. Muszę pogadać ze staruszkiem.
+|||Mam księgę kodów, może uda mi sie z nim porozmawiać wybierając odpowiednie słowa i sklejając je w jakieś zdania.
+ActiveEvent|Golem-NeedToTalkWithOldMan||
+Keyboard|on||
+Stop|||
+Jump||step2|
+Destroy|||

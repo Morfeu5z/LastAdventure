@@ -1,0 +1,217 @@
+﻿Person|YamikoPortret:???||
+GOTO|EventWasActiveted:Stefan-DontNeedFlower|SkipFlower|
+GOTO|EventWasActiveted:Yamiko-StoryWithOutGolem,OldMan-GolemDialog|StefanNeedFlower|
+Jump||SkipFlower|
+GOTO|EventWasActiveted:Yamiko|RepeateDialog01|
+GOTO|EventWasActiveted:Yamiko-IamStefanAndItIsMyStory|StoryAboutStefan|
+//----------------------------------------------------Pierwszy dialog
+Keyboard|off||
+Person|YamikoPortret:???||
+|||Stój śmiertelna istoto! Ani kroku dalej!
+Person|HeroPortret:Stefan||
+||| (⌐ ͡■ ͜ʖ ͡■)
+Person|YamikoPortret:???||
+||| (⊙＿⊙')      
+ActiveEvent|YamikoFirstLook||
+Person|HeroPortret:Stefan||
+||| ( ͡° ͜ʖ ͡°)ﾉ⌐■-■
+Person|YamikoPortret:???||
+||| (˵ ͡°   ͜     ͡°˵)  
+Person|HeroPortret:Stefan||
+||| ( ͡-  ͜ʖ ͡°)ﾉ⌐■-■ ♫ ☆ ✿ڿڰۣ—      
+Person|YamikoPortret:???||
+||| ( ♥ヮ♥)*:・ﾟ✧        
+Person|NarratorPortret:Narrator||
+||| Narrator: Okay!
+||| Narrator: Okay! Wybacz, że przerywam, ale szybkie info.
+||| Narrator: Stefan nie ruszał się przez ostatnie linie dialogowe, wszystko to było wyobrażeniem napotkanej postaci, dlatego też...
+||| Narrator: powiedzmy, że od teraz dodatkowo w znakach " <color=#8cff90>{{ klamerki }}</color> " będą zawarte myśli naszych bohaterów.
+||| Narrator: Okey?
+||| Narrator: Okey? Okey.
+||| Narrator: Okey? Okey. To ja już nie przeszkadzam.
+Person|HeroPortret:Stefan||
+||| (ㆆ _ ㆆ)?  <color=#8cff90>{{  Co ona się tak patrzy? Mam coś na twarzy?  }}</color>  
+|||Psze Pani, wszystko w porządku?
+Person|YamikoPortret:???||
+|||(˵- w -˵) Ja... ja... ja...     
+Person|HeroPortret:Stefan||
+|||Potrzebujesz pomocy?
+Person|YamikoPortret:Miko?||
+|||Ja... miko...
+ActiveEvent|MyNameIsMiko||
+|||<color=#ffaaf3>{{  O cholera, serce mi zaraz wyskoczy (⊙＿⊙')  }}</color>
+Person|HeroPortret:Stefan||
+|||Ja Stefan...
+|||Ja Stefan... Miło cię poznać Miko.
+Person|YamikoPortret:Yamiko||
+|||Yamiko... to znaczy... Nazywam się Yamiko.
+ActiveEvent|MyNameIsYamiko||
+|||<color=#ffaaf3>{{  No już dziewczyno weź się w garść  ( > - < ) }}</color>  
+Person|HeroPortret:Stefan||
+|||Yamiko... okey...  
+|||Yamiko... okey... Miło Cię poznać... czy coś...
+|||Wszystko w porządku? Wyglądasz jakby się coś stało.
+Person|YamikoPortret:Yamiko||
+|||Co...? Ni... nie, nic się nie stało...
+|||<color=#ffaaf3>{{  AAA! Martwi się o mnie (ﾉ♥ヮ♥)ﾉ  }}</color>  
+|||Dawno nie widziałam ludzkiej istoty w tych okolicach.
+|||Bardzo przypominasz mi...
+|||Bardzo przypominasz mi... Pewną osobę. 
+|||Jak to się stało, że tu trafiłeś?
+Person|HeroPortret:Stefan||
+|||To dość długa historia, na pewno chcesz bym ją opowiedział?
+Person|YamikoPortret:Yamiko||
+|||I tak nie mam nic lepszego do roboty.  <color=#ffaaf3>{{  Im dłuższa tym lepiej ( ♥ ͜    ♥ ) }}</color>
+Person|HeroPortret:Stefan||
+|||No dobra... Ale jednak ją streszczę, bo mi śpieszno.
+|||Wait... Ty mnie rozumiesz!? Wiesz co mówię!
+Person|YamikoPortret:Yamiko||
+|||Eee... A nie powinnam? 
+Person|HeroPortret:Stefan||
+|||Abecadło z pieca spadło! Stół z powyłamywanymi nogami! Haha! Mogę gadać jak nakręcony! (ﾉ◕ヮ◕)ﾉ*:・ﾟ✧
+|||Dobra to słuchaj, lecimy od początku.
+ActiveEvent|Yamiko-IamStefanAndItIsMyStory||
+BackToBegin|||
+//----------------------------------------------------Historia Stefana
+Jump||StoryAboutStefan|
+Person|HeroPortret:Stefan||
+|||Obudziłem się w jaskini i nic nie pamiętam do tej pory, z wydażeń przed pobudką. 
+|||Bolał mnie zadek więc się przestraszyłem nie na żarty.
+|||Naszczęście podobno tylko spadłem z nieba, ale ile w tym prawdy to ciężko stwierdzić.
+|||I to mnie w sumie niepokoi ( ఠ ͟ʖ ఠ)  
+|||Mało tego z jakiegoś powody nie potrafiłem wypowiedzieć ani słowa i to nie jakbym ich nie pamiętał, a jakby coś mnie blokowało.
+|||Starszy facet, który opatrzył moje rany, dał mi przesyłkę i wskazał drogę do miasta. Robię za kuriera by spłacić dług życia.
+|||Nie śpieszę się za bardzo, więc postanowiłem pomóc Sally w naprawie "Jumpera", który mnie tu wrzucił.
+|||Zdobycie części do tej maszyny było niezłym wyzwaniem.
+|||Spotkałem po drodze nawet dwa trupy i duchy [¬ºo°]¬ 
+Person|YamikoPortret:Yamiko||
+|||(๑•́ ₃ •̀๑)   
+Person|HeroPortret:Stefan||
+|||Na szczęście nie były ruchliwe, a jeden nawet dał mi rakietowe buty, które chyba są najlepszą rzeczą do tej pory ^ - ^
+|||Stare laboratorium, a obecne katakumby stały sie moim celem poszukiwań układu scalonego. Jak niedługo potem się przekonałem.
+|||Była to również swego rodzaju pułapka.
+|||Musiałem zmierzyć się z wielkim Giga Slimem i zginąłem...
+|||... ale przeżyłem! ʕ •`ᴥ•´ʔ_/¯  
+|||Ostatecznie zdobyłem potrzebne przedmioty i tak trafiłem tutaj.
+Person|YamikoPortret:Yamiko||
+|||Zaiste ciekawe przygody przeżyłeś <color=#ffaaf3>{{  ♥ - ♥  }}</color>  
+GOTO|EventWasNotActiveted:OldMan-GolemDialog|StoryWithOutGolem|
+//----------------------------------------------------Historia Stefana z golemem
+Person|HeroPortret:Stefan||
+|||A teraz sprawa sprawa ciekawsza...
+|||Niestety przypadkiem obudziłem pradawnego Golema ( - _ - )
+|||Staruszek powiedział mi, że bez specjalnej substancji na pociskach, golem będzie nie do ruszenia.
+|||Wybrałem się więc w podróż, na poszukiwanie składników.
+|||Katalizator, Toksyna i Płatek z esencją.
+|||Swoją drogą...
+|||Wiesz może gdzie znajdę kwiat pełen esencji?
+|||To ostatni składnik.
+Person|YamikoPortret:Yamiko||
+|||Kwiat pełen esencji...  <color=#ffaaf3>{{  ♥ - ♥  }}</color>  
+|||Kwiat pełen esencji...  Powiadasz...  <color=#ffaaf3>{{  ♥ - ♥  }}</color>  
+|||Jest taaa... Czej... Nie możesz go wziąć!
+|||Dzięki niemu pozostałości miasta jeszcze nie spadły z nieba.
+|||To główne źródło enegii w tym miejscu!
+|||Sam jeden dostarcza ponad połowy esencji z promieni słońca. Jak go zabraknie to obecan flora nie da sobie rady.
+|||Wszystko co tu lewituje spadnie na ziemię, a wtedy dojdzie do apokalisy!
+|||Przeszedłeś długą drogę i stawiłeś czoła wielu przeciwnością losu. Doceniam to.
+|||Jednak mym zadaniem jest ochrona tego kwiatu, więc jak chcesz go zdobyć musisz mnie pokonać!   •`_´•  
+Person|HeroPortret:Stefan||
+|||Kochaniutka spokojnie, po co te nerwy ʕっ•ᴥ•ʔ  
+|||W zasadzie potrzebny jedynie jeden płatek ʕっ•ᴥ•ʔ  
+|||Nie chcę zrywać kwiatu.
+Person|YamikoPortret:Yamiko||
+|||Aaa... No... Dobrze...  <color=#ffaaf3>{{  I jak go nie kochać ♥ - ♥  }}</color> 
+|||Weź ten. 
+Add|Flower:Fabular||
+|||>> <color=#000000>Otrzymano płatek napełniony esencją</color> <<
+|||Niedawno opadł pod ciężarem zebranej esencji.
+Person|HeroPortret:Stefan||
+|||Wspaniale! \(* ͜    *)/  
+|||A myślałem, że czeka mnie kolejna walka.
+|||Dzięki wielkie!
+ActiveEvent|Stefan-DontNeedFlower||
+Jump|4||
+//----------------------------------------------------Dialog Bez Golema
+Jump||StoryWithOutGolem|
+ActiveEvent|Yamiko-StoryWithOutGolem||
+Person|HeroPortret:Stefan||
+Person|HeroPortret:Stefan||
+|||No dobra, będę się już zbierał.
+Person|YamikoPortret:Yamiko||
+|||Nie tak szybko! Wtargnąłeś na mój teren.
+Person|HeroPortret:Stefan||
+|||To znaczy, że teraz jestem Twoim więźniem?
+Person|YamikoPortret:Yamiko||
+|||Więźniem!?
+|||Aj tam zaraz więźniem... Przecież Cię nie trzymam w lochu...
+|||Ale... ( ͡° ͜ʖ ͡°)
+|||... jest jeden warunek...  <color=#ffaaf3>{{  ♥ ͜    ♥  }}</color> 
+|||Puszczę Cię jak obiecasz, że wrócisz do mnie jeszcze...  <color=#ffaaf3>{{ (˵♥ ͜    ♥˵) }}</color>
+Person|HeroPortret:Stefan||
+|||A... No jasne... Będzie po drodze to wpadnę.
+Person|YamikoPortret:Yamiko||
+|||Kocham Cię...  <color=#ffaaf3>{{  Wypowiedziane szeptem  ♥ ͜    ♥  }}</color>
+Person|HeroPortret:Stefan||
+|||Hm? Mówiłaś coś? (˵ㆆ _ ㆆ˵)  <color=#8cff90>{{ Dobrze usłyszałem? }}</color>
+Person|YamikoPortret:Yamiko||
+|||A nic nic.  <color=#ffaaf3>{{  Cholera słyszał (˵- ͜    -˵)" }}</color>
+|||Jak coś, to cały czas tu będę.
+Person|HeroPortret:Stefan||
+|||No to do zobaczenia.  <color=#8cff90>{{ Wow, to była dziwna rozmowa ・ω・ }}</color>
+ActiveEvent|Yamiko||
+Keyboard|on||
+Stop|||
+//----------------------------------------------------Stefan potrzebuje kwiatka 
+Jump||StefanNeedFlower|
+Keyboard|off||
+Person|HeroPortret:Stefan||
+|||Hej piękna ( ͡-  ͜ʖ ͡°)ﾉ⌐■-■  
+Person|YamikoPortret:Yamiko||
+|||H.. H.. Hej ~(♥﹏♥)~  
+Person|HeroPortret:Stefan||
+|||Mam sprawę do Ciebie. Wiesz może gdzie znajdę kwiat pełen esencji?
+|||Przez przypadek obudziłem golema i trochę jest mi potrzebny ( - _ -")
+|||To ostatni składnik do specjalnego przedmiotu.
+Person|YamikoPortret:Yamiko||
+|||Kwiat pełen esencji...  <color=#ffaaf3>{{  ♥ - ♥  }}</color>  
+|||Kwiat pełen esencji...  Powiadasz...  <color=#ffaaf3>{{  ♥ - ♥  }}</color>  
+|||Jest taaa... Czej... Nie możesz go wziąć!
+|||Dzięki niemu pozostałości miasta jeszcze nie spadły z nieba.
+|||To główne źródło enegii w tym miejscu!
+|||Sam jeden dostarcza ponad połowy esencji z promieni słońca. Jak go zabraknie to obecan flora nie da sobie rady.
+|||Wszystko co tu lewituje spadnie na ziemię, a wtedy dojdzie do apokalisy!
+|||Przeszedłeś długą drogę i stawiłeś czoła wielu przeciwnością losu. Doceniam to.
+|||Jednak mym zadaniem jest ochrona tego kwiatu, więc jak chcesz go zdobyć musisz mnie pokonać!   •`_´•  
+Person|HeroPortret:Stefan||
+|||Kochaniutka spokojnie, po co te nerwy ʕっ•ᴥ•ʔ  
+|||W zasadzie potrzebny jedynie jeden płatek ʕっ•ᴥ•ʔ  
+|||Nie chcę zrywać kwiatu.
+Person|YamikoPortret:Yamiko||
+|||Aaa... No... Dobrze...  <color=#ffaaf3>{{  I jak go nie kochać ♥ - ♥  }}</color> 
+|||Weź ten. 
+Add|Flower:Fabular||
+|||>> <color=#000000>Otrzymano płatek napełniony esencją</color> <<
+|||Niedawno opadł pod ciężarem zebranej esencji.
+Person|HeroPortret:Stefan||
+|||Wspaniale! \(* ͜    *)/  
+|||A myślałem, że czeka mnie kolejna walka.
+|||Dzięki wielkie.
+Person|YamikoPortret:Yamiko||
+|||Zajrzyj do mnie jeszcze kiedyś “ヽ(♥ ▽ ♥)ノ”
+ActiveEvent|Stefan-DontNeedFlower||
+Keyboard|on||
+Stop|||
+//----------------------------------------------------Dialog Powtarzający się
+Jump||RepeateDialog01|
+Person|HeroPortret:Stefan||
+|||>> Rozmawiaj <<
+Keyboard|off||
+|||No czeee...
+Person|YamikoPortret:Yamiko||
+|||Hej jej ♥    
+|||Jak tam przygody?  <color=#ffaaf3>{{  Cholera wciąż go kocham (˵- ͜    -˵)" }}</color>
+Person|HeroPortret:Stefan||
+|||A jakoś lecą  <color=#8cff90>{{ Hmm... Ta dziewczyna... Ma w sobie... coś... ಠ_ಠ  }}</color>
+Keyboard|on||
+Stop|||

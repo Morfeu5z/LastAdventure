@@ -1,0 +1,18 @@
+﻿OneUse|FirstLifeCrystal||
+GOTO|EventWasActiveted:OldMan-YourNameIsStefan|Stefan|
+Person|HeroPortret:Ja||
+Jump|3||
+Jump||Stefan|
+Person|HeroPortret:Stefan||
+GOTO|EventWasActiveted:FirstLifeCrystal|Destroy|
+|||>> Zbadaj <<
+Keyboard|off||
+|||Hm... wygląda ładnie. Ciekawe do czego służy.
+|||O doczepiono metkę z informacją.
+|||"Skrystalizowana esencja. Przedmiot do wyekwipowania. Przywraca zdrowie w momencie śmierci. Mówiąc wprost, masz dodatkowe 3 życia."
+|||No to faktycznie może się przydać.
+Add|LifeCrystal:Active||
+ActiveEvent|FirstLifeCrystal||
+Keyboard|on||
+Jump||Destroy|
+Destroy|||

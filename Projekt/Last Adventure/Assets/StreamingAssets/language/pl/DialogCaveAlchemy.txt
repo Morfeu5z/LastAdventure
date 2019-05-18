@@ -1,0 +1,70 @@
+﻿GOTO|EventWasActiveted:OldMan-YourNameIsStefan|Stefan|
+Person|HeroPortret:Ja||
+Jump|3||
+Jump||Stefan|
+Person|HeroPortret:Stefan||
+|||>> Zbadaj <<
+GOTO|EventWasNotActiveted:OldMan-GolemDialog|DontUse|
+GOTO|EventWasActiveted:Alchemy-GiveSPAmmo|End|
+GOTO|EventWasActiveted:Alchemy-katalizator,Alchemy-toxin,Alchemy-flower|GiveAmmo|
+GOTO|ItemInEquip:Toxin|Toxin|
+GOTO|ItemInEquip:Flower|Flower|
+GOTO|ItemInEquip:Catalyst|Katalizator|
+GOTO|EventWasActiveted:Alchemy-Maker|AlchemyMaker|
+Jump||DontUse|
+Keyboard|off||
+|||Hm...  ಠ_ಠ    
+|||Wygląda jak stół alchemiczny.
+|||Może się jeszcze do czegoś przyda.
+Keyboard|on||
+Stop|||
+Jump||AlchemyMaker|
+|||Gotuje się jak dobra zupka.
+BackToBegin|||
+Jump||Katalizator|
+Keyboard|off||
+|||Katalizator...
+|||Trochę szkoda bo ładne, ale no niech mnie z tym Golemem.
+|||Plusk.
+Drop|Catalyst||
+|||Okey... i co teraz?
+ActiveEvent|Alchemy-Maker||
+ActiveEvent|Alchemy-katalizator||
+Keyboard|on||
+BackToBegin|||
+Jump||Toxin|
+Keyboard|off||
+|||Okaaaay...
+|||Jednym ze składników była toksyna.
+|||To chyba wystarczy to tu wrzucić.
+Drop|Toxin||
+|||Siup...
+|||Nie wybuchło więc chyba jest ok.
+ActiveEvent|Alchemy-Maker||
+ActiveEvent|Alchemy-toxin||
+Keyboard|on||
+BackToBegin|||
+Jump||Flower|
+Keyboard|off||
+|||Następny jest kwiat wypełniony esencją...
+|||No to hop do gara.
+Drop|Flower||
+|||Siup...
+ActiveEvent|Alchemy-Maker||
+ActiveEvent|Alchemy-flower||
+Keyboard|on||
+BackToBegin|||
+Jump||GiveAmmo|
+Keyboard|off||
+|||WoooW!
+|||Ale fajne...
+|||Ale fajne... Coś...
+|||Hm...
+|||Hm... To jakaś amunicja specjalna?
+Add|specialAmmo:Active||
+|||>> Otrzymano amunicję specjalną <<
+ActiveEvent|Alchemy-GiveSPAmmo||
+Keyboard|on||
+Jump||End|
+|||Na razie to chyba tyle. Czas się zająć Golemem.
+Stop|||

@@ -1,0 +1,5 @@
+﻿Person|HeroPortret:Stefan||
+Keyboard|off||
+|||Jumper? Czy to nie to Sally próbuje naprawić tam na górze?
+Keyboard|on||
+Destroy|||

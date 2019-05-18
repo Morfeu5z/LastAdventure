@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - PlayerSwordAttack
+  - PlayerFeet
+  - PlayerBody
+  - Health
+  - Chest
+  - SkyRock01
+  - Jumper
+  - Demage
+  - Floor
+  - Config
+  - comeraPoint
+  - stopCamera
+  - Portal
+  - portal
+  - Bullet
+  - NPC
+  - Golem
+  - Shild
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - Audio
+  - PlayerAttack
+  - PlayerFeet
+  - 
+  - 
+  - Item
+  - Recoil
+  - 
+  - 
+  - Enemy
+  - Demage
+  - 
+  - NPC
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - LoadZone
+  - UnCollider
+  - Flora
+  - Ground
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Front
+    uniqueID: 2413090341
+    locked: 0

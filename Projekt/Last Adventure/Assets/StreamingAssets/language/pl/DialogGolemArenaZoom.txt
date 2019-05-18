@@ -1,0 +1,7 @@
+﻿OneUse|ZoomOnGolemArena||
+Person|HeroPortret:Stefan||
+Keyboard|off||
+|||Wow... Robi wrażenie...
+ActiveEvent|ZoomOnGolemArena||
+Keyboard|on||
+Destroy|||

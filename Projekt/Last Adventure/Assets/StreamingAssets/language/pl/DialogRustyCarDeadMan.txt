@@ -1,0 +1,28 @@
+﻿Person|HeroPortret:Stefan||
+GOTO|EventWasActiveted:Rusty-DeadMan|Step2|
+|||>> Zbadaj <<
+Keyboard|off||
+|||O rety kotlety! Umarlak!
+|||Co on tam trzyma?
+|||Co on tam trzym? List?
+ActiveEvent|Rusty-DeadMan||
+Keyboard|on||
+Jump||Step2|
+|||>> Czytaj list <<
+Keyboard|off||
+|||"Umieram..."
+|||"Umieram... Nie uniknę już śmierci."
+|||"Ledwo mogę pisać, ale wciąż mam nadzieję, że ktoś to znajdzie."
+|||"Mój brat utknął w starym Laboratorium."
+|||"Mój brat utknął w starym Laboratorium. Ja sam ledwo dałem radę się wydostać."
+|||"Nie wiem czy on jeszcze żyje. Ta wielka cholera nas zaskoczyła."
+|||"Heh..."
+|||"A mówią, że to łagodne stworzenia."
+|||"Zostawiam tu kartę dostępu..."
+|||"Zostawiam tu kartę dostępu... i proszę..."
+|||"Znajdź mojego brata..."
+|||"Znajdź mojego brata... Uratuj go jeśli jeszcze żyje."
+|||"Do zobaczenia po drugiej stronie."
+|||"Bywaj..."
+Keyboard|on||
+Stop|||

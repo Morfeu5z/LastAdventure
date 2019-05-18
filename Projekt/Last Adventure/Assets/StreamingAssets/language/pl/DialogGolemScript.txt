@@ -1,0 +1,40 @@
+﻿Person|HeroPortret:Stefan||
+GOTO|EventWasActiveted:DeadBossGoodBoss|DeadBossGoodBoss|
+GOTO|ItemInEquip:specialAmmo|specialAmmo|
+GOTO|EventWasActiveted:ThisIsBoss|ThisIsBoss|
+GOTO|EventWasActiveted:Golem-Awaking|Check|
+GOTO|ItemInEquip:BookOfCode|WakeUp|
+|||>> Zbadaj inskrypcję <<
+Keyboard|off||
+|||Hmm, ciekawe co to. Wygląda jak jakiś szyfr.
+|||#$^&)@**HD)*SIO)__+      
+Keyboard|on||
+Stop|||
+Jump||WakeUp|
+|||>> Złam szyfr <<
+Keyboard|off||
+|||No dobra, zobaczmy co to...
+|||Mhym... Okay... To chyba jakoś tak...
+|||HeHe, to wygląda jak... eee... sami się domyślcie ( ͡° ͜ʖ ͡°) 
+|||Dobra! Mam to! Zaczynajmy!
+|||<color=#ffaaf3>Abra!</color> <color=#f1ff59>Kadabra!</color>   
+|||<color=#ffaaf3>Abra!</color> <color=#f1ff59>Kadabra!</color> <color=#a3daff>Hokus!</color> <color=#8cff90>Pokus!</color>   
+|||<color=#ffaaf3>Skidaddle!</color> <color=#f1ff59>Skadoodle!</color>   
+|||<color=#ffaaf3>Skidaddle!</color> <color=#f1ff59>Skadoodle!</color> <color=#a3daff>Lorem!</color> <color=#8cff90>Ipsum!</color>   
+ActiveEvent|Golem-Awaking||
+|||Hmm...
+|||Hmm... I co teraz? Drzwi się otworzyły?
+Keyboard|on||
+Stop|||
+Jump||Check|
+|||Może drzwi się otworzyły, warto sprawdzić.
+Stop|||
+Jump||ThisIsBoss|
+|||Psia kostka. No to narobiłem ಠ_ಠ"
+Stop|||
+Jump||DeadBossGoodBoss|
+|||Ufff... i po ptokach  L( òᴥó )/  
+Stop|||
+Jump||specialAmmo|
+|||Czas się policzyć magiczna cholero (눈_눈) 
+Stop|||

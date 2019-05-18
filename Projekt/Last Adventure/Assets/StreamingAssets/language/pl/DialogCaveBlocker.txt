@@ -1,0 +1,31 @@
+﻿Movement|1||
+GOTO|EventWasActiveted:OldMan-YourNameIsStefan|Stefan|
+Person|HeroPortret:Ja||
+Jump|3||
+Jump||Stefan|
+Person|HeroPortret:Stefan||
+GOTO|EventWasActiveted:OldMan-FirstGun|HaveGun|
+Keyboard|off||
+|||To najwyraźniej wyjście z tej jaskini.
+|||Impreza musiała być ostra, bo ni huhu nic nie pamiętam...
+|||...lepiej pogadam ze staruszkiem.
+Keyboard|on||
+Stop|||
+Jump||HaveGun|
+GOTO|EventWasActiveted:CaveBlocker-FirstQuest|Relax|
+Keyboard|off||
+|||Wiii pierwszy Quest!
+|||Typowo na start zostałem kurierem. Tyle dobrego, że dał mi broń...
+|||...pewnie czeka mnie wystrzałowa podróż. Ajjjć... Sucho.
+ActiveEvent|CaveBlocker-FirstQuest||
+Keyboard|on||
+Jump||Relax|
+GOTO|EventWasActiveted:Save-FirstSave|Open|
+Keyboard|off||
+|||W sumie mógłbym już ruszać, ale nie mam pełnego zdrowia...
+|||...może jakaś krótka drzemka przed wyprawą?
+|||Tamten stołek wygląda obiecująco.
+Keyboard|on||
+Stop|||
+Jump||Open|
+Destroy|||

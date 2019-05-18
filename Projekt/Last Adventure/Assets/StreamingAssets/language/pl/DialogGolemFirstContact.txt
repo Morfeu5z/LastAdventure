@@ -1,0 +1,21 @@
+﻿Person|HeroPortret:Stefan||
+GOTO|EventWasActiveted:Golem-wowItsHim|step2|
+GOTO|EventWasActiveted:Golem-Awaking|step1|
+Stop|||
+Jump||step1|
+Keyboard|off||
+|||A więc to zrobiły te czary ( ʘ ͜ʖ ʘ)
+Person|GolemPortret:Golem||
+|||Ani kroku dalej!
+|||Jam jest strażnikiem tych drzwi powołanym przez pradawną magię.
+|||Jeśli przekroczysz miejsce, w którym stoję...
+|||Bez wahania Cię <color=#aa2222>ZABIJĘ!</color>
+ActiveEvent|Golem-wowItsHim||
+Person|HeroPortret:Stefan||
+|||Cóż za agresja ( ఠ ͟ʖ ఠ)  
+|||Póki co nie mam z nim szans.
+|||Jestem pewien, że stara betsy nie da rady.
+Keyboard|on||
+Stop|||
+Jump||step2|
+Stop|||

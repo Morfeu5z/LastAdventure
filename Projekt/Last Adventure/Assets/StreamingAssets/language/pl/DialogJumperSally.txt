@@ -1,0 +1,279 @@
+﻿Person|HeroPortret:Stefan||
+GOTO|EventWasNotActiveted:Sally-FirstDialog|JumpToFirstDialog|
+|||>> Rozmawiaj <<
+Person|SallyPortret:Sally||
+GOTO|EventWasActiveted:DeadBossGoodBoss|GolemIsDead|
+GOTO|ItemInEquip:specialAmmo|specialAmmo|
+GOTO|EventWasActiveted:DontTalkAboutYamiko|DontTalkAboutYamiko|
+GOTO|EventWasActiveted:Yamiko|TalkAboutYamiko|
+Jump||DontTalkAboutYamiko|
+GOTO|EventWasActiveted:Sally-DontTalkAboutGolem|dontTalkAboutGolem|
+GOTO|EventWasActiveted:Golem-NeedToTalkWithOldMan|talkAboutGolem|
+Jump||dontTalkAboutGolem|
+GOTO|EventWasActiveted:DontNeed-Catalyst|SkipGiveCatalyst|
+GOTO|EventWasActiveted:Need-Catalyst|GiveCatalyst|
+Jump||SkipGiveCatalyst|
+GOTO|EventWasActiveted:Sally-JumperWorking|JumperWorking|
+GOTO|EventWasActiveted:Sally-DontTalkAboutSlimeDeath|DontTalkAboutSlimeDeath|
+GOTO|EventWasActiveted:Slime-Death|TalkAboutSlimeDeath|
+Jump||DontTalkAboutSlimeDeath|
+GOTO|ItemInEquip:BT64F|HaveBT64F|
+GOTO|EventWasActiveted:Lab-Door|CheckedLabDoor|
+GOTO|EventWasActiveted:Sally-PowerGenerator|GeneratorOn|
+GOTO|ItemInEquip:ToolKit|HaveToolkit|
+GOTO|EventWasActiveted:Sally-FirstDialog|AfterFirstDialogWithSally|
+Jump||JumpToFirstDialog|
+Keyboard|off||
+Person|HeroPortret:Stefan||
+|||...  
+Person|SallyPortret:Sally||
+|||O! To ty!
+|||No proszę, Jednak żyjesz!
+|||Rypłeś o ziemię z taką siłą, aż "mikory" z drzew pospadały.
+|||Dwa kroki w przód i spadłbyś wprost na mnie. A wtedy złamany kręgosłup jak nic.
+|||Ale co ważniejsze, skąd u licha się wziąłeś tam w górze?
+|||Spadłeś z miasta w chmurach?
+Person|HeroPortret:Stefan||
+|||...
+Person|SallyPortret:Sally||
+|||Dlaczego nic nie mówisz? Może straciłeś pamięć?
+|||W sumie nie zdziwiłoby mnie to. Cud, że w ogóle żyjesz.
+|||Swoją drogą jestem Sally. Mojego dziadka pewnie już poznałeś. Ciebie jak zwą?
+Person|HeroPortret:Stefan||
+|||...
+Person|SallyPortret:Sally||
+|||...
+Person|HeroPortret:Stefan||
+|||... ...
+Person|SallyPortret:Sally||
+|||O imię pytam. Dostanę odpowiedź?
+Person|HeroPortret:Stefan||
+|||... ... ...
+Person|SallyPortret:Sally||
+|||Eh... nie chcesz to nie mów.
+|||Ale ocaliłam Ci życie więć mógłbyś być milszy.
+|||Wiesz co? 
+|||Przysługa za przysługę. 
+|||Pomżesz mi z naprawą pewniej rzeczy.
+|||Widzisz tą maszyne obok mnie? 
+|||To stara wyrzutnia do miasta w chmurach zwana <color=#000000>Jumperem</color>.
+|||Od jakiegoś czasu próbuje ją naprawić, niestety brakuje mi paru rzeczy. 
+|||Podobnie agregatu nie naprawię bez <color=#000000>specjalnych narzędzi</color>.
+|||Wiem, że są gdzieś w mrocznym lesie. 
+|||Poszłabym sama, ale wiesz. "<color=#000000>Mroczny Las</color>".
+|||Hehe...
+|||Podobno tam straszy (ㆆ _ ㆆ)    
+|||W każdym razie... 
+|||<color=#000000>Rozglądaj się bacznie i nie daj się dotknąć</color>  (ㆆ _ ㆆ) 
+Person|HeroPortret:Stefan||
+|||(- _ -")
+Person|SallyPortret:Sally||
+|||No i co? Brzmi jak dobra przygoda?
+|||Ale małomówny jesteś. Na szczęście słuchasz dobrze.
+|||Inną rzeczą jaką potrzebuję jest płytka <color=#000000>BT64F</color>.
+|||Na zachodzie są <color=#000000>katakumby</color>.
+|||Kiedyś to było laboratorium, ale coś się rypło i zamknięto wejście na amen.
+|||To jak? Poszukasz dla mnie tych części? Od dawna się zastanawiam co jest tam w chmurach.
+|||Chciałabym wreszcie zobaczyć to miasto. A w zasadzie jego ruiny.
+|||Eksplozja osobliwej materii raczej obróciła większość w pył.
+Person|HeroPortret:Stefan||
+|||...
+Person|SallyPortret:Sally||
+|||...
+Person|HeroPortret:Stefan||
+|||... ...
+Person|SallyPortret:Sally||
+|||... ...
+Person|HeroPortret:Stefan||
+|||... ... ... 
+Person|SallyPortret:Sally||
+|||Niezły creep z Ciebie jest...
+Person|HeroPortret:Stefan||
+||| ( ͡° ͜ʖ ͡°)  
+Person|SallyPortret:Sally||
+|||Tiaaaaa... ಠ_ಠ"   
+ActiveEvent|Sally-FirstDialog||
+Keyboard|on||
+Stop|||
+Jump||AfterFirstDialogWithSally|
+|||Zestaw naprawczy jest w <color=#000000>Mrocznym Lesie</color>.
+|||Płytkę BT64F znajdziesz prawdopodobnie w <color=#000000>katakumbach</color>.
+GOTO|ItemInEquip:ToolKit|HaveToolkit|
+Stop|||
+Jump||HaveToolkit|
+Keyboard|off||
+Drop|ToolKit||
+Person|SallyPortret:Sally||
+|||O! OOO! Super! Zarąbiście! 
+|||Masz narzędzia! ( ✧≖ ͜ʖ≖)  
+|||Teraz mogę naprawić tą kupę złomu zwaną generatorem!
+|||Jeszcze chwila...
+|||... moment ...
+|||... momencik ...
+|||... iiii ...
+ActiveEvent|Sally-PowerGenerator||
+SetOK|LocationJumper/hvp||
+|||Voilà! Co prawda nie jak nowy ale całkiem sprawny.
+|||Hmm... Dziwne... (；一_一)        
+Person|HeroPortret:Stefan||
+|||  ...?  
+Person|SallyPortret:Sally||
+|||Wygląda na to, że coś wyżera moc.
+|||Pobór energii jest znacznie większy niż wymaga tamta lampa.
+|||Jumper nie jest jeszcze sprawny, wiec to musi być coś innego.
+Person|HeroPortret:Stefan||
+||| ヾ(⌐■_■)ノ         
+Person|SallyPortret:Sally||
+|||Tiaaaaa... ಠ_ಠ"   
+Keyboard|on||
+Stop|||
+Jump||GeneratorOn|
+Person|SallyPortret:Sally||
+|||Jak załatwisz <color=#000000>płytkę BT64F</color> to dam radę to naprawić. Rozejrzyj się za nią w <color=#000000>katakumbach</color>.
+GOTO|ItemInEquip:BT64F|HaveBT64F|
+Stop|||
+Jump||CheckedLabDoor|
+Person|SallyPortret:Sally||
+|||Powiadasz, że wejście do katakumb jest aktywne? Pewnie to to pobiera energię z generatora.
+Stop|||
+Jump||HaveBT64F|
+Person|SallyPortret:Sally||
+Keyboard|off||
+Drop|BT64F||
+|||Masz płytkę!?
+|||YESSS!!! Zaraz całość na nowo zacznie działać!
+|||...Stuk...Puk...Bziu...
+Person|HeroPortret:Stefan||
+||| ಠoಠ  
+Person|SallyPortret:Sally||
+|||...Ryp...Szuuu...Wziuu...
+SetOK|LocationJumper/Jumper||
+ActiveEvent|Sally-JumperWorking||
+|||I gotowe! ಠ‿ಠ    
+|||Teraz możesz korzystać z wyrzutni by dostać się do Sky Town. Co prawda dawno nikogo tam nie było ale chyba warto pozwiedzać.
+Keyboard|on||
+Jump||JumperWorking|
+|||Ależ jestem ciekawa jak tam jest. Jeszcze chwilę zbiorę siły i się sama przekonam.
+Stop|||
+Jump||talkAboutGolem|
+Keyboard|off||
+Person|SallyPortret:Sally||
+|||Siemasz!
+|||Co tam trzymasz?
+|||"DeCodex"... Księga kodów? No fajne ale...
+|||Co tam pokazujesz?
+Person|HeroPortret:Stefan||
+|||Ja...
+|||Nie...
+|||Móc...
+|||Rozmowa...
+|||Książka...
+|||Pomoc...
+Person|SallyPortret:Sally||
+|||Ciekawy sposób komunikacji obrałeś. 
+|||Naprawdę. 
+|||Doceniam. 
+|||Bez ściemy.
+|||Podsumowując ten zlepek wychodzi na to, że cały ten czas się nie odzywałeś bo nie mogłeś? 
+|||To musi być jakaś klątwa albo choroba choć na chorego nie wyglądasz.
+Person|HeroPortret:Stefan||
+|||Ja... 
+|||Chcieć... 
+|||Otworzyć... 
+|||Drzwi... 
+|||Zepsuć...
+|||Potwór... 
+|||Żyć...
+Person|SallyPortret:Sally||
+|||Co ty pleciesz? 
+|||Wyrwałeś te ciężkie wrota z zawiasów czy jak? 
+|||Co prawda czasem się zatną, ale wtedy wystarczy mocniej pchnąć.
+|||Czej...
+|||Czej... Co za potwór?
+Person|HeroPortret:Stefan||
+|||Stary...
+|||Strażnik...
+Person|SallyPortret:Sally||
+|||OOOOO! ಠ 0 ಠ  
+|||UUUUU! ಠ 0 ಠ  
+|||OO!    ಠ 0 ಠ  
+|||Obudziłeś Golema. ಠ 0 ಠ  
+|||No pieknie. 
+|||Jak do tego doszło w ogóle!? 
+|||Bo rozumiem, że drzwi pewnie się zaczęły i pomyślałeś, że jest mechanizm, ale by zaraz golema budzić?
+|||Do tego trzeba pradawnych zaklęć.
+Person|NarratorPortret:Narrator||
+|||Narrator: "Gdyby autor miał nieco więcej czasu nastapiłoby zbliżenie na tych dwoje oraz książkę którą Stefan trzyma by komunikować się jako tako z innymi."
+|||Narrator: "A na razie do Sally dotarło, że rozszyfrował inskrypcję."
+|||Narrator: "A DeCodex należy do niej."
+Person|SallyPortret:Sally||
+|||OOOOO! ಠ 0 ಠ  
+|||UUUUU! ಠ 0 ಠ  
+|||OO!    ಠ 0 ಠ  
+|||Więc to tam zgubiłam mój DeCodex!!!
+|||To żeś narozrabiał... Strażnik jest chroniony pradawnym zaklęciem.
+|||Kiedyś w ramach rozrywki badałam przepływy esencji oraz zwłoki Golema przy bramie, parę przedmiotów mi zaginęło po powrocie...
+|||... i niech to lich akurat Tobie trafiła się księga.
+|||Trzeba to odkręcić.
+|||Może dziadziuś coś poradzi.
+|||Eh... A wystarczyło pchnąć nieco mocniej.
+ActiveEvent|Sally-DontTalkAboutGolem||
+Keyboard|on||
+BackToBegin|||
+Jump||GiveCatalyst|
+Keyboard|off||
+Person|HeroPortret:Stefan||
+|||Jest... Plan... Potrzebny... Katalizator...
+Person|SallyPortret:Sally||
+|||Katalizator powiadasz... hm...
+|||Gdzieś tu miałam odłamek rupidu. To skała, albo raczej kryształ powstały w wyniku eksplozji osobliwej materii.
+|||Gdyby nie to, że Golem to teraz problem wspólny, raczej nie dałabym ci go. Nawet za dobrą cenę.
+Add|Catalyst:Fabular||
+|||>> <color=#000000>Otrzymano Rupid</color> <<
+|||Obyś go nie zmarnował.
+ActiveEvent|DontNeed-Catalyst||
+Keyboard|on||
+BackToBegin|||
+Jump||TalkAboutSlimeDeath|
+Keyboard|off||
+Person|SallyPortret:Sally||
+|||I jak poszło? Co tam znalazłeś? Masz płytkę?
+Person|HeroPortret:Stefan||
+|||ʕ·͡ᴥ·ʔ  
+Person|SallyPortret:Sally||
+GOTO|ItemInEquip:BT64F|HaveBT64FAfterSlime|
+|||Mniejsza. Zdobyłeś płytkę do jumpera?
+|||Widzę, że nie. Szukaj dalej w katakumbach, napewno gdzieś tam jest.
+Jump||HaveBT64FAfterSlime|
+ActiveEvent|Sally-DontTalkAboutSlimeDeath||
+Keyboard|on||
+BackToBegin|||
+Jump||TalkAboutYamiko|
+Keyboard|off||
+Person|SallyPortret:Sally||
+|||Stefan! Stefan! Stefan!
+|||I jak było tam w górze!? Strasznie? Strasznie fajnie? Zostało coś do zwiedzania!?
+Person|NarratorPortret:Narrator||
+|||Narrator: "A gdy miał już Stefek pochwalić się swą dykcją, zrozumiał..."
+|||Narrator: "... iż znów nic nie jest w stanie powiedzieć."
+Person|HeroPortret:Stefan||
+|||...
+||| ; - ;
+Person|SallyPortret:Sally||
+|||Albo dobra, nic nie mów. Sama wszystko obadam.
+|||Muszę tylko zebrać nieco odwagi ( ͡~ ͜ʖ ͡°) 
+ActiveEvent|DontTalkAboutYamiko||
+Keyboard|on||
+Stop|||
+Jump||specialAmmo|
+Person|SallyPortret:Sally||
+|||Nadszedł czas na starcie.
+|||Powodzenia koleżko.
+Stop|||
+Jump||GolemIsDead|
+Keyboard|off||
+Person|SallyPortret:Sally||
+|||No i super. Powodzenia w dalszej drodze.
+|||A ja sobie jeszcze poodpoczywam przed podróżą do SkyTown.
+Keyboard|on||
+Stop|||
